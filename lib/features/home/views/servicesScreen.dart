@@ -3,6 +3,7 @@ import 'package:facility_management/features/home/widgets/appBarForHomePage.dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../constants.dart';
 import '../widgets/homeServicesList.dart';
 
 class ServicesScreen extends StatelessWidget {
@@ -11,8 +12,9 @@ class ServicesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: lIGHT_BACKGROUND ,
       appBar: AppBarForHomePage(text: 'Services', sizedBoxWidth: 180,),
-      body: HomeServiceList(),
+      body: HomeServiceList () ,
     );
   }
 }

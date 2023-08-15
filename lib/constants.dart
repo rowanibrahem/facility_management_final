@@ -7,6 +7,7 @@ const kPrimaryColor = Color(0xFFB39952);
 
 const LIGHT_GREY = Color(0xFFC4C4C4);
 const LIGHT_BACKGROUND = Color(0xFFF8F8F8);
+const lIGHT_BACKGROUND = Color(0xFFFFFFFF);
 
 
 const kSecondaryColor = Color(0xFFC4C4C4);

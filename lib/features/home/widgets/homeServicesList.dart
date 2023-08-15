@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utilies/assets.dart';
 import '../../services_home/presentation/views/widgets/list_item.dart';
 
 
 
 class HomeServiceList extends StatelessWidget {
-  HomeServiceList({Key? key}) : super(key: key);
+  HomeServiceList({Key? key,}) : super(key: key);
 
   final services1 = [
     "Pay a bill",

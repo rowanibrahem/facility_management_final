@@ -13,8 +13,6 @@ final double num ;
     return AspectRatio(
       aspectRatio: num/1.3,
       child: Container(
-        height: MediaQuery.of(context).size.height*0.6,
-
         padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
         decoration:  BoxDecoration(
           shape: BoxShape.rectangle,
@@ -32,6 +30,7 @@ final double num ;
             ),
             const SizedBox(height: 10,),
             Text(
+              textAlign : TextAlign.center ,
               text,
               style: Styles.textStyle22.copyWith(fontSize: 14),
             ),
