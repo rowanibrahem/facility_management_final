@@ -17,7 +17,7 @@ class AssetData {
   ];
 
   static const splash=[
-    "assets/images/img.png",
+    "assets/images/setting1.png",
     "assets/images/img_2.png",
     "assets/images/img_1.png"
   ];
@@ -27,6 +27,18 @@ class AssetData {
     "assets/images/svgexport-6 (56).png",
     "assets/images/svgexport-7 (3).png",
     "assets/images/svgexport-7 (4).png",
+  ];
+
+
+  static const setting=[
+   "assets/icons/setting1.png",
+    "assets/icons/setting2.png",
+    "assets/icons/setting3.png",
+    "assets/icons/setting4.png",
+    "assets/icons/setting5.png",
+    "assets/icons/setting6.png",
+    "assets/icons/setting7.png"
+
   ];
 
 static const homeServices1 = [
@@ -72,7 +84,6 @@ static const homeServices1 = [
     "assets/images/furnitureImages/svgexport-7 (48).png",
 
   ] ;
-
 
 
 }

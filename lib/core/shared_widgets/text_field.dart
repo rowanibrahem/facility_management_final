@@ -13,7 +13,10 @@ Widget defaultText({
   bool? enable,
   int? lines,
   String? prefixImageAsset,
+  double?borderWidth,
+  int?maxLines,
 }) => TextFormField(
+  minLines: maxLines,
   enabled: enable,
   controller: controller,
   obscureText: isObscure,
@@ -36,6 +39,11 @@ Widget defaultText({
     border:  OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
     ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(
+        width: borderWidth!
+      )
+    )
   ),
   keyboardType: type,
   onChanged: onChange,

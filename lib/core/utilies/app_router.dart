@@ -10,6 +10,7 @@ import 'package:facility_management/features/pay_history/presentation/views/hist
 import 'package:facility_management/features/payment/presentation/views/pay_view.dart';
 import 'package:facility_management/features/services/presentation/view/flat_view.dart';
 import 'package:facility_management/features/services/presentation/view/services_view.dart';
+import 'package:facility_management/features/setting/presentation/views/setting_view.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/boarding/presentation/view/boarding_view.dart';
@@ -31,6 +32,11 @@ abstract class AppRouter{
     GoRoute(
       path: '/signView',
       builder: (context , state) => const SignUpView(),
+    ),
+
+    GoRoute(
+      path: '/payHistory',
+      builder: (context , state) => const PayHistoryView()
     ),
     GoRoute(
       path: '/bottomNav',
