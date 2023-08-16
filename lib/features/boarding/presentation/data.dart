@@ -1,7 +1,7 @@
 
 
 class BoardingData{
-  static const Images=['assets/images/onboarding/img.png',
+  static const Images=['assets/images/onboarding/setting1.png',
     'assets/images/onboarding/img_1.png',
     'assets/images/onboarding/img_2.png'];
   static const headingData=["Easy way to manage your finance",

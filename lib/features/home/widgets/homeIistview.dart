@@ -17,13 +17,7 @@ class _HomeListviewState extends State<HomeListview> {
     "assets/homeImages/Mask Group 18.png",
     "assets/homeImages/Mask Group 82.png",
     "assets/homeImages/Mask Group 83.png"
-
-  ];
-  List<String> texts = [
-    "Contrary to popular belief, Lorem Ipsum is not simply ",
-    "There are many variations of passages ",
-    "If you are going to use a passage of Lorem Ipsum",
-    "combined with a handful of model  ",
+    
   ];
   
   
@@ -97,29 +91,61 @@ class _HomeListviewState extends State<HomeListview> {
                     bottom: 50,
                     child: SizedBox(
                       height: MediaQuery.of(context).size.height*0.2,
-                      width: MediaQuery.of(context).size.width*1,
-                  child: Container(
-                      height: MediaQuery.of(context).size.height*0.2,
-                      width: MediaQuery.of(context).size.width*1,
-                 //   clipBehavior: Clip.antiAliasWithSaveLayer,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10)
-                      ),
-                      child: Image.asset(images[index],fit: BoxFit.fill,)),
+                      width: MediaQuery.of(context).size.width,
 
+                  child:  CarouselSlider(
+                    options: CarouselOptions(height: 400.0),
+                    items: imagesWidgets.map((i) {
+                      return Builder(
+                        builder: (BuildContext context) {
+                          return Container(
+                              width: MediaQuery.of(context).size.width,
+                              margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                              decoration:  BoxDecoration(
+                                borderRadius: BorderRadius.circular(10)
+                              ),
+                            child: i,
+                          );
+                        },
+                      );
+                    }).toList(),
+                  ),
+
+
+                  // child: PageView.builder(
+                  //   physics: const BouncingScrollPhysics(),
+                  //   controller: pageController,
+                  //   itemCount: 4,
+                  //   onPageChanged: (index){
+                  //   setState(() {
+                  //   currentIndex = index;
+                  //   });
+                  //   },
+                  //   scrollDirection: Axis.horizontal,
+                  //   itemBuilder: (context,index){
+                  //   return SizedBox(
+                  //   width: double.infinity,
+                  //   child:
+                  //  Container(
+                  //    decoration: BoxDecoration(
+                  //      borderRadius: BorderRadius.circular(20)
+                  //    ),
+                  //    clipBehavior: Clip.antiAlias,
+                  //    child: Image.asset(images[index]),
+                  //  )
+                  //     ,
+                  //   );
+                  //   },
+                  //   )
 
 
 
 )),
 
 
-             Positioned(
+             const Positioned(
                 bottom: 20,
-                child: Text(texts[index],
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
-                  style:
-                const TextStyle(
+                child: Text('Alaa and Sara , Alaa is on Control',style: TextStyle(
                   fontSize: 15
                 ),),
               )
@@ -130,9 +156,7 @@ class _HomeListviewState extends State<HomeListview> {
           ),
         ],
       );
-       }
-
-       else {
+       } else {
          return
            SizedBox(
              height: MediaQuery.of(context).size.height*0.35,
@@ -169,30 +193,61 @@ class _HomeListviewState extends State<HomeListview> {
                          height: MediaQuery.of(context).size.height*0.2,
                          width: MediaQuery.of(context).size.width,
 
-                       child :  Container(
-                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                             decoration: BoxDecoration(
-                                 borderRadius: BorderRadius.circular(10)
-                             ),
-                             child: Image.asset(images[index],fit: BoxFit.fill,)),
+                         child:  CarouselSlider(
+                           options: CarouselOptions(height: 400.0),
+                           items: imagesWidgets.map((i) {
+                             return Builder(
+                               builder: (BuildContext context) {
+                                 return Container(
+                                   width: MediaQuery.of(context).size.width,
+                                   margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                                   decoration:  BoxDecoration(
+                                       borderRadius: BorderRadius.circular(10)
+                                   ),
+                                   child: i,
+                                 );
+                               },
+                             );
+                           }).toList(),
+                         ),
 
 
-
+                         // child: PageView.builder(
+                         //   physics: const BouncingScrollPhysics(),
+                         //   controller: pageController,
+                         //   itemCount: 4,
+                         //   onPageChanged: (index){
+                         //   setState(() {
+                         //   currentIndex = index;
+                         //   });
+                         //   },
+                         //   scrollDirection: Axis.horizontal,
+                         //   itemBuilder: (context,index){
+                         //   return SizedBox(
+                         //   width: double.infinity,
+                         //   child:
+                         //  Container(
+                         //    decoration: BoxDecoration(
+                         //      borderRadius: BorderRadius.circular(20)
+                         //    ),
+                         //    clipBehavior: Clip.antiAlias,
+                         //    child: Image.asset(images[index]),
+                         //  )
+                         //     ,
+                         //   );
+                         //   },
+                         //   )
 
 
 
                        )),
 
 
-                   Positioned(
-                     bottom: 20,
-                     child: Text(texts[index],
-                       overflow: TextOverflow.ellipsis,
-                       maxLines: 2,
-                       style:
-                       const TextStyle(
-                           fontSize: 15
-                       ),),
+                   const Positioned(
+                     bottom: 25,
+                     child: Text('Alaa and Sara , Alaa is on Control',style: TextStyle(
+                         fontSize: 15
+                     ),),
                    )
 
 
@@ -202,7 +257,7 @@ class _HomeListviewState extends State<HomeListview> {
            );
        }
     },
-    itemCount: 4,
+    itemCount: 5,
     );
   }
 }

@@ -1,4 +1,3 @@
-
 class AssetData {
   static const services = [
     "assets/icons/Rectangle 201.png",
@@ -45,33 +44,4 @@ static const homeServices1 = [
     "assets/images/vuesax-bold-1building.png",
 
   ] ;
-  static const discoverScreenImages = [
-    "assets/images/furnitureImages/Mask Group 96.png",
-    "assets/images/furnitureImages/Mask Group 91.png",
-    "assets/images/furnitureImages/Mask Group 92.png",
-    "assets/images/furnitureImages/Mask Group 93.png",
-    "assets/images/furnitureImages/Mask Group 95.png",
-  ];
-
-  static const discoverScreenAddress = [
-    "Laval",
-    "La-z-boy",
-    "Home Furniture",
-    "Decor",
-    "Urban",
-  ];
-  static const discoverScreenListviewImages1 = [
-    "assets/images/furnitureImages/svgexport-7 (50).png",
-    "assets/images/furnitureImages/svgexport-7 (49).png",
-
-  ] ;
-
-  static const discoverScreenListviewImages2 = [
-    "assets/images/furnitureImages/svgexport-7 (47).png",
-    "assets/images/furnitureImages/svgexport-7 (48).png",
-
-  ] ;
-
-
-
 }
