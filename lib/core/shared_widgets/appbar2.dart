@@ -1,6 +1,8 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/utilies/styles.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../constants.dart';
+import '../utilies/styles.dart';
 
 class AppBarButtom2 extends StatefulWidget  implements PreferredSizeWidget {
 
@@ -61,14 +63,14 @@ class _AppBarButtom2State extends State<AppBarButtom2> {
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  width: 50,
+                  width: 45,
                   height: 90,
                   decoration:  BoxDecoration(
                     color: Colors.white,
                     borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Set the shadow color
+                        color: Colors.grey.withOpacity(0.2), // Set the shadow color
                         spreadRadius: 2, // Set the spread radius of the shadow
                         blurRadius: 6, // Set the blur radius of the shadow
                         offset: Offset(0, 3), // Set the offset of the shadow
@@ -77,7 +79,7 @@ class _AppBarButtom2State extends State<AppBarButtom2> {
                   ),
                   child: Image.asset(
                       'assets/images/noticon.png',
-                    fit: BoxFit.contain,
+                    fit: BoxFit.scaleDown,
                   ),
                   ),
                 ),

@@ -1,5 +1,6 @@
-import 'package:facility_management/core/utilies/assets.dart';
 import 'package:flutter/material.dart';
+
+import '../utilies/assets.dart';
 class SponsersList extends StatelessWidget {
 
   final double? width;

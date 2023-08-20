@@ -1,4 +1,5 @@
-import 'package:facility_management/features/boarding/presentation/view/widgets/boarding_body.dart';
+
+import 'package:facility/features/boarding/presentation/view/widgets/boarding_body.dart';
 import 'package:flutter/material.dart';
 
 class BoardingView extends StatelessWidget {

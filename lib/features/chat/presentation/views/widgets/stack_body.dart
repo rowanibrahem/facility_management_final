@@ -1,7 +1,6 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/features/payment/presentation/views/widgets/reciet_contenent.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
 import 'chat_content.dart';
 class ChatStack extends StatelessWidget {

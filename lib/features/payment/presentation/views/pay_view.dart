@@ -1,8 +1,8 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/payment/presentation/views/widgets/pay_body.dart';
+import 'package:facility/features/payment/presentation/views/widgets/pay_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants.dart';
+import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../../core/utilies/styles.dart';
 
 class PaymentView extends StatelessWidget {

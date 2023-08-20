@@ -10,13 +10,13 @@ card_setting({required this.icon,required this.txt});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 95.h,
+      height: 75.h,
       child: Column(
         children: [
           SizedBox(
-            height: 80.h,
+            height: 60.h,
             child: Card(
-
+color: Colors.transparent,
               semanticContainer: true,
               clipBehavior: Clip.antiAliasWithSaveLayer,
               shape: RoundedRectangleBorder(
@@ -38,6 +38,8 @@ card_setting({required this.icon,required this.txt});
           ),
           Divider(
             thickness: 1,
+            endIndent: 15.w,
+            indent: 10.w,
           )
         ],
       ),

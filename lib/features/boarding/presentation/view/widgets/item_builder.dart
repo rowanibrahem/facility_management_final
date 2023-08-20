@@ -1,7 +1,9 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/features/boarding/presentation/data.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../../../constants.dart';
+import '../../../../../core/utilies/styles.dart';
+import '../../data.dart';
 class ItemBuilder extends StatelessWidget {
   int index=0;
    ItemBuilder({Key? key , required this.index} ) : super(key: key);

@@ -1,6 +1,7 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/chat/presentation/views/widgets/chat_success.dart';
+import 'package:facility/features/chat/presentation/views/widgets/chat_success.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/shared_widgets/appbar2.dart';
 
 class ChatSuccess extends StatelessWidget {
   const ChatSuccess({Key? key}) : super(key: key);

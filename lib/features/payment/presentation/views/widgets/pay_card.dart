@@ -1,11 +1,12 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/shared_widgets/custom_buttom.dart';
-import 'package:facility_management/core/shared_widgets/text_field.dart';
-import 'package:facility_management/core/utilies/assets.dart';
-import 'package:facility_management/core/utilies/styles.dart';
+
 import 'package:flutter/material.dart';
 
+import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/check_button.dart';
+import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/shared_widgets/text_field.dart';
+import '../../../../../core/utilies/assets.dart';
+import '../../../../../core/utilies/styles.dart';
 
 class PayCard extends StatefulWidget {
   const PayCard({Key? key}) : super(key: key);

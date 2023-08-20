@@ -12,7 +12,8 @@ class SelectContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0).h,
+      padding:  EdgeInsets.symmetric(horizontal: 15.w
+      ),
       child: Container(
         padding: const EdgeInsets.all(7),
         height: 56.h,

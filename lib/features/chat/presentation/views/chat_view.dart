@@ -1,5 +1,4 @@
-import 'package:facility_management/core/shared_widgets/button_appbar.dart';
-import 'package:facility_management/features/chat/presentation/views/widgets/chat_body.dart';
+import 'package:facility/features/chat/presentation/views/widgets/chat_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/shared_widgets/appbar2.dart';

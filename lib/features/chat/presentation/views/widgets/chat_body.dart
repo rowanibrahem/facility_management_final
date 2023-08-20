@@ -1,11 +1,10 @@
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/features/chat/presentation/views/success_view.dart';
-import 'package:facility_management/features/chat/presentation/views/widgets/stack_body.dart';
+
+import 'package:facility/features/chat/presentation/views/widgets/stack_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
-import '../../../../../core/shared_widgets/text_field.dart';
+import '../success_view.dart';
 
 class ChatBody extends StatefulWidget {
   const ChatBody({Key? key}) : super(key: key);

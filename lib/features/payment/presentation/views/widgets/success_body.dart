@@ -1,7 +1,8 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/shared_widgets/custom_buttom.dart';
-import 'package:facility_management/features/payment/presentation/views/widgets/success_stack.dart';
+import 'package:facility/features/payment/presentation/views/widgets/success_stack.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../constants.dart';
+import '../../../../../core/shared_widgets/custom_buttom.dart';
 
 class SuccessBody extends StatelessWidget {
   const SuccessBody({Key? key}) : super(key: key);

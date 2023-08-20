@@ -1,6 +1,7 @@
-import 'package:facility_management/features/payment/presentation/views/widgets/pay_method.dart';
+import 'package:facility/features/payment/presentation/views/widgets/pay_method.dart';
 import 'package:flutter/material.dart';
-import 'package:facility_management/constants.dart';
+
+import '../../../../../constants.dart';
 
 class RadioCheck2 extends StatefulWidget {
   const RadioCheck2({Key? key}) : super(key: key);

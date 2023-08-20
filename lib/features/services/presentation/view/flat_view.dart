@@ -1,10 +1,10 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/features/services/presentation/view/widgets/flat_body.dart';
-import 'package:facility_management/features/services/presentation/view/widgets/services_body.dart';
+
+import 'package:facility/features/services/presentation/view/widgets/flat_body.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../constants.dart';
 import '../../../../core/shared_widgets/appbar2.dart';
+import '../../../../core/utilies/styles.dart';
 class FlatView extends StatelessWidget {
   const FlatView({Key? key}) : super(key: key);
 

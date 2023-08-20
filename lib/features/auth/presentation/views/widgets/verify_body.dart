@@ -1,10 +1,11 @@
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/features/auth/presentation/views/widgets/verify_otp.dart';
+
+import 'package:facility/features/auth/presentation/views/widgets/verify_otp.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/utilies/styles.dart';
 
 class VerifyBody extends StatefulWidget {
   const VerifyBody({Key? key}) : super(key: key);

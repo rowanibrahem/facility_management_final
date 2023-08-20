@@ -1,4 +1,4 @@
-import 'package:facility_management/features/auth/presentation/views/widgets/sign_up_body.dart';
+import 'package:facility/features/auth/presentation/views/widgets/sign_up_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/shared_widgets/button_appbar.dart';

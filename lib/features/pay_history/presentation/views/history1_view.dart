@@ -1,5 +1,5 @@
-import 'package:facility_management/features/pay_history/presentation/views/widgets/app_bar.dart';
-import 'package:facility_management/features/pay_history/presentation/views/widgets/history1_body.dart';
+import 'package:facility/features/pay_history/presentation/views/widgets/app_bar.dart';
+import 'package:facility/features/pay_history/presentation/views/widgets/history1_body.dart';
 import 'package:flutter/material.dart';
 
 class PayHistoryView extends StatelessWidget {

@@ -1,5 +1,7 @@
-import 'package:facility_management/core/utilies/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../core/utilies/styles.dart';
 
 class AppBarForHomePage extends StatefulWidget  implements PreferredSizeWidget {
 final double sizedBoxWidth ;
@@ -26,7 +28,7 @@ class _AppBarForHomePageState extends State<AppBarForHomePage> {
         padding: const EdgeInsets.all(10.0),
         child: Row(
           children: [
-            SizedBox(width: widget.sizedBoxWidth,),
+            SizedBox(width: widget.sizedBoxWidth.w,),
             widget.columnText==null? Text(
               widget.text,
               style: Styles.textStyle15.copyWith(fontSize: 16 , color: Colors.black),
@@ -35,14 +37,14 @@ class _AppBarForHomePageState extends State<AppBarForHomePage> {
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Container(
-                  width: 50,
+                  width: 45,
                   height: 90,
                   decoration:  BoxDecoration(
                     color: Colors.white,
                     borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Set the shadow color
+                        color: Colors.grey.withOpacity(0.2), // Set the shadow color
                         spreadRadius: 2, // Set the spread radius of the shadow
                         blurRadius: 6, // Set the blur radius of the shadow
                         offset: const Offset(0, 3), // Set the offset of the shadow
@@ -52,7 +54,7 @@ class _AppBarForHomePageState extends State<AppBarForHomePage> {
                   child:
                   Image.asset(
                     'assets/images/noticon.png',
-                    fit: BoxFit.contain,
+                    fit: BoxFit.scaleDown,
                   ),
                   //const Icon(Icons.notifications_active)
 

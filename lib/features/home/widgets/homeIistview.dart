@@ -17,7 +17,14 @@ class _HomeListviewState extends State<HomeListview> {
     "assets/homeImages/Mask Group 18.png",
     "assets/homeImages/Mask Group 82.png",
     "assets/homeImages/Mask Group 83.png"
-    
+
+  ];
+  List<String> texts = [
+    " The point of using Lorem Ipsum is that ",
+    "content here', making it look like readable English",
+    "If you are going to use a passage of Lorem Ipsum ",
+    "combined with a handful of model sentence "
+
   ];
   
   
@@ -45,21 +52,15 @@ class _HomeListviewState extends State<HomeListview> {
        if(index == 0 ) {
          return Column(
         children: [
-         const Row(
-           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(children: [
-                Text('Welcome, ', style: TextStyle(
-                    color: kPrimaryColor,
-                    fontSize: 20
-                ),),
-                Text('Loaa Hany', style: TextStyle(
-                    fontSize: 20
-                ),),
-              ],),
-              Icon(Icons.more_horiz)
-            ],
-          ),
+        const Row(children: [
+           Text('Welcome, ', style: TextStyle(
+               color: kPrimaryColor,
+               fontSize: 20
+           ),),
+           Text('Loaa Hany', style: TextStyle(
+               fontSize: 20
+           ),),
+         ],),
 
           SizedBox(
             height: MediaQuery.of(context).size.height*0.35,
@@ -87,65 +88,35 @@ class _HomeListviewState extends State<HomeListview> {
                     child: Text('Admin',style: TextStyle(fontSize: 18),),
                 ),
 
+
+                const Positioned(top: 43,right: 1,child : Icon(Icons.more_horiz),),
                 Positioned(
                     bottom: 50,
-                    child: SizedBox(
-                      height: MediaQuery.of(context).size.height*0.2,
-                      width: MediaQuery.of(context).size.width,
+                    child: Container(
 
-                  child:  CarouselSlider(
-                    options: CarouselOptions(height: 400.0),
-                    items: imagesWidgets.map((i) {
-                      return Builder(
-                        builder: (BuildContext context) {
-                          return Container(
-                              width: MediaQuery.of(context).size.width,
-                              margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                              decoration:  BoxDecoration(
-                                borderRadius: BorderRadius.circular(10)
-                              ),
-                            child: i,
-                          );
-                        },
-                      );
-                    }).toList(),
-                  ),
+                        height: MediaQuery.of(context).size.height*0.2,
 
+                        width: MediaQuery.of(context).size.width*0.96,
 
-                  // child: PageView.builder(
-                  //   physics: const BouncingScrollPhysics(),
-                  //   controller: pageController,
-                  //   itemCount: 4,
-                  //   onPageChanged: (index){
-                  //   setState(() {
-                  //   currentIndex = index;
-                  //   });
-                  //   },
-                  //   scrollDirection: Axis.horizontal,
-                  //   itemBuilder: (context,index){
-                  //   return SizedBox(
-                  //   width: double.infinity,
-                  //   child:
-                  //  Container(
-                  //    decoration: BoxDecoration(
-                  //      borderRadius: BorderRadius.circular(20)
-                  //    ),
-                  //    clipBehavior: Clip.antiAlias,
-                  //    child: Image.asset(images[index]),
-                  //  )
-                  //     ,
-                  //   );
-                  //   },
-                  //   )
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+
+                        decoration: BoxDecoration(
+
+                          borderRadius: BorderRadius.circular(10)
+
+                        ),
 
 
 
-)),
 
 
-             const Positioned(
+                        child: Image.asset(images[index],fit: BoxFit.fill,))),
+
+
+             Positioned(
                 bottom: 20,
-                child: Text('Alaa and Sara , Alaa is on Control',style: TextStyle(
+                child: Text(texts[index],style:
+                const TextStyle(
                   fontSize: 15
                 ),),
               )
@@ -180,6 +151,7 @@ class _HomeListviewState extends State<HomeListview> {
                            'assets/homeImages/FB_IMG_1594741082303.jpg'),
                      ),
                    ),
+                   const Positioned(top: 43,right: 1,child : Icon(Icons.more_horiz),),
 
                    //Admin
                    const Positioned(
@@ -189,63 +161,31 @@ class _HomeListviewState extends State<HomeListview> {
 
                    Positioned(
                        bottom: 50,
-                       child: SizedBox(
-                         height: MediaQuery.of(context).size.height*0.2,
-                         width: MediaQuery.of(context).size.width,
+                       child:                     Container(
 
-                         child:  CarouselSlider(
-                           options: CarouselOptions(height: 400.0),
-                           items: imagesWidgets.map((i) {
-                             return Builder(
-                               builder: (BuildContext context) {
-                                 return Container(
-                                   width: MediaQuery.of(context).size.width,
-                                   margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                                   decoration:  BoxDecoration(
-                                       borderRadius: BorderRadius.circular(10)
-                                   ),
-                                   child: i,
-                                 );
-                               },
-                             );
-                           }).toList(),
-                         ),
+                           height: MediaQuery.of(context).size.height*0.2,
 
+                           width: MediaQuery.of(context).size.width*0.96,
 
-                         // child: PageView.builder(
-                         //   physics: const BouncingScrollPhysics(),
-                         //   controller: pageController,
-                         //   itemCount: 4,
-                         //   onPageChanged: (index){
-                         //   setState(() {
-                         //   currentIndex = index;
-                         //   });
-                         //   },
-                         //   scrollDirection: Axis.horizontal,
-                         //   itemBuilder: (context,index){
-                         //   return SizedBox(
-                         //   width: double.infinity,
-                         //   child:
-                         //  Container(
-                         //    decoration: BoxDecoration(
-                         //      borderRadius: BorderRadius.circular(20)
-                         //    ),
-                         //    clipBehavior: Clip.antiAlias,
-                         //    child: Image.asset(images[index]),
-                         //  )
-                         //     ,
-                         //   );
-                         //   },
-                         //   )
+                           clipBehavior: Clip.antiAliasWithSaveLayer,
+
+                           decoration: BoxDecoration(
+
+                               borderRadius: BorderRadius.circular(10)
+
+                           ),
 
 
 
-                       )),
 
 
-                   const Positioned(
+                           child: Image.asset(images[index],fit: BoxFit.fill,))),
+
+
+                   Positioned(
                      bottom: 25,
-                     child: Text('Alaa and Sara , Alaa is on Control',style: TextStyle(
+                     child: Text(texts[index],style:
+                     const TextStyle(
                          fontSize: 15
                      ),),
                    )
@@ -257,7 +197,7 @@ class _HomeListviewState extends State<HomeListview> {
            );
        }
     },
-    itemCount: 5,
+    itemCount: 4,
     );
   }
 }

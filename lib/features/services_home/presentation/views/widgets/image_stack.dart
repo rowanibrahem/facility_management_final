@@ -1,7 +1,7 @@
-import 'package:facility_management/core/utilies/styles.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/utilies/styles.dart';
 
 class ImageStack extends StatelessWidget {
   const ImageStack({Key? key}) : super(key: key);

@@ -1,7 +1,10 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/home/widgets/appBarForHomePage.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../../../constants.dart';
+import '../widgets/appBarForHomePage.dart';
+import '../widgets/discoverScreenUI.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({super.key});
@@ -9,7 +12,10 @@ class DiscoverScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: lIGHT_BACKGROUND ,
+
       appBar: AppBarForHomePage(text: 'Discover', sizedBoxWidth: 180,),
+      body: const DiscoverScreenUI(),
     );
   }
 }

@@ -1,9 +1,10 @@
-import 'package:facility_management/core/utilies/assets.dart';
-import 'package:facility_management/features/home/widgets/furnitureScreenListView.dart';
-import 'package:facility_management/features/home/widgets/smallWidgets/discoverScreenListview.dart';
+
+import 'package:facility/features/home/widgets/smallWidgets/discoverScreenListview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
+import '../../../core/utilies/assets.dart';
+import 'furnitureScreenListView.dart';
 
 class DiscoverScreenUI extends StatelessWidget {
  const  DiscoverScreenUI({super.key});

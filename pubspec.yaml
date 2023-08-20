@@ -1,4 +1,4 @@
-name: facility_management
+name: facility
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=3.0.6 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -40,13 +40,17 @@ dependencies:
   simple_animations: ^4.2.0
   page_transition: ^2.0.9
   supercharged: ^2.1.1
+  wave_transition: ^0.0.6
+  flutter_date_pickers:
+  intl:
+  date_picker_timeline:
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   smooth_page_indicator: ^1.1.0
   dot_navigation_bar: ^1.0.2
   carousel_slider:
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,8 +1,8 @@
 import 'dart:async';
-
-import 'package:facility_management/core/utilies/assets.dart';
-import 'package:facility_management/features/boarding/presentation/view/boarding_view.dart';
 import 'package:flutter/material.dart';
+
+import '../../core/utilies/assets.dart';
+import '../boarding/presentation/view/boarding_view.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

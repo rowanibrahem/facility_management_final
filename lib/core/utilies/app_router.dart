@@ -1,24 +1,16 @@
 
-import 'package:facility_management/features/auth/presentation/views/register_view.dart';
-import 'package:facility_management/features/auth/presentation/views/sign_up_view.dart';
-import 'package:facility_management/features/auth/presentation/views/verify_view.dart';
-import 'package:facility_management/features/chat/presentation/views/chat_view.dart';
-import 'package:facility_management/features/chat/presentation/views/success_view.dart';
-import 'package:facility_management/features/home/views/homePage.dart';
 
-import 'package:facility_management/features/pay_history/presentation/views/history1_view.dart';
-import 'package:facility_management/features/payment/presentation/views/pay_view.dart';
-import 'package:facility_management/features/services/presentation/view/flat_view.dart';
-import 'package:facility_management/features/services/presentation/view/services_view.dart';
-import 'package:facility_management/features/setting/presentation/views/setting_view.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/boarding/presentation/view/boarding_view.dart';
+import '../../features/auth/presentation/views/register_view.dart';
+import '../../features/auth/presentation/views/sign_up_view.dart';
+import '../../features/auth/presentation/views/verify_view.dart';
+import '../../features/home/views/homePage.dart';
+import '../../features/pay_history/presentation/views/history1_view.dart';
 import '../../features/payment/presentation/views/pay_card.dart';
 import '../../features/payment/presentation/views/success_view.dart';
 import '../../features/services_home/presentation/views/home_view.dart';
 import '../../features/services_home/presentation/views/widgets/bottom_nav.dart';
-import '../../features/splash/splash_screen1.dart';
 
 
 

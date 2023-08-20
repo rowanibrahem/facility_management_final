@@ -1,4 +1,4 @@
-import 'package:facility_management/features/services/presentation/view/widgets/services_body.dart';
+import 'package:facility/features/services/presentation/view/widgets/services_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/shared_widgets/appbar2.dart';
@@ -12,7 +12,7 @@ class ServicesView extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBarButtom2(text: 'Our services',),
-        body: ServicesBody(),
+        body: const ServicesBody(),
       ),
     );
   }

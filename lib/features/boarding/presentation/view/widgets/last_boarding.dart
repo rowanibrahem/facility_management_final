@@ -1,10 +1,11 @@
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/features/boarding/presentation/data.dart';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/utilies/styles.dart';
+import '../../data.dart';
 class LastBoarding extends StatelessWidget {
   const LastBoarding({Key? key}) : super(key: key);
 

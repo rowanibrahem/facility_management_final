@@ -1,14 +1,11 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/shared_widgets/CutomTabBar.dart';
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/setting/presentation/animation/fadeanimation.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/AddRequestBody.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/griditem.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/selectContainer.dart';
+
+import 'package:facility/features/setting/presentation/views/widgets/AddRequestBody.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/shared_widgets/appbar2.dart';
 import '../../../services/presentation/view/widgets/grid_item.dart';
+import '../animation/fadeanimation.dart';
 
 class Add_Request_View extends StatefulWidget {
 
@@ -24,7 +21,8 @@ class _Add_Request_ViewState extends State<Add_Request_View> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBarButtom2(text: "Add Request",),
-        body: FadeAnimation(3, child: Add_Request_Body(),)
+        body: FadeAnimation(3,
+          child: Add_Request_Body(),)
       ),
     );
   }

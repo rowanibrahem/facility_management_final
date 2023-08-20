@@ -1,8 +1,10 @@
-import 'package:facility_management/constants.dart';
-import 'package:facility_management/core/shared_widgets/custom_buttom.dart';
-import 'package:facility_management/features/chat/presentation/views/widgets/stack_chat.dart';
+
+import 'package:facility/features/chat/presentation/views/widgets/stack_chat.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import '../../../../../constants.dart';
+import '../../../../../core/shared_widgets/custom_buttom.dart';
 
 class SucessBody extends StatefulWidget {
   const SucessBody({Key? key}) : super(key: key);

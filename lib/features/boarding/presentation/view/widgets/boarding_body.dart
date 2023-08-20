@@ -1,9 +1,10 @@
-import 'package:facility_management/features/boarding/presentation/view/widgets/item_builder.dart';
-import 'package:facility_management/features/boarding/presentation/view/widgets/last_boarding.dart';
+
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../../constants.dart';
+import 'item_builder.dart';
+import 'last_boarding.dart';
 
 class BoardingBody extends StatefulWidget {
   BoardingBody({Key? key}) : super(key: key);

@@ -1,12 +1,13 @@
-import 'package:facility_management/core/utilies/styles.dart';
-import 'package:facility_management/core/shared_widgets/radio_buttom.dart';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/shared_widgets/check_button.dart';
 import '../../../../../core/shared_widgets/custom_buttom.dart';
+import '../../../../../core/shared_widgets/radio_buttom.dart';
 import '../../../../../core/shared_widgets/text_field.dart';
+import '../../../../../core/utilies/styles.dart';
 
 
 class RegisterBody extends StatefulWidget {

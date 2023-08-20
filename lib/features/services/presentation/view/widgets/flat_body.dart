@@ -1,9 +1,8 @@
-import 'dart:developer';
 
-import 'package:facility_management/features/services/presentation/view/widgets/services_body.dart';
-import 'package:facility_management/core/shared_widgets/sponsers_list.dart';
+import 'package:facility/features/services/presentation/view/widgets/services_body.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/shared_widgets/sponsers_list.dart';
 import '../../../../../core/utilies/styles.dart';
 class FlatBody extends StatelessWidget {
   const FlatBody({Key? key}) : super(key: key);

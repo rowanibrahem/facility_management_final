@@ -1,9 +1,11 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../constants.dart';
+import '../../../core/shared_widgets/appbar2.dart';
 import '../../../core/utilies/assets.dart';
+import '../widgets/tapBar.dart';
 
 class LaZBoyScreen extends StatefulWidget {
   const LaZBoyScreen({super.key, required this.index , required this.heartColor });
@@ -27,8 +29,8 @@ class _LaZBoyScreenState extends State<LaZBoyScreen> {
           child: Column(
             children: [
               SizedBox(
-                  height: MediaQuery.of(context).size.height*0.25,
-                  width: MediaQuery.of(context).size.height*1,
+                  height: MediaQuery.of(context).size.height*0.25.h,
+                  width: MediaQuery.of(context).size.height*1.w,
                   child: Image.asset(AssetData.discoverScreenImages[widget.index],fit: BoxFit.fill,)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,91 +58,7 @@ class _LaZBoyScreenState extends State<LaZBoyScreen> {
                 ],
               ),
 
-            const  SizedBox(height: 100,),
-            const  Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 8),
-                        child: Text('Description',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: CupertinoColors.black
-                          ),),),
-
-                      Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                          " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",style:
-                      TextStyle(
-                          fontSize: 14,color: Colors.grey
-                      ),
-                      overflow:TextOverflow.ellipsis ,
-                      maxLines: 2,
-                      ),
-
-                      SizedBox(height: 23,),
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 8),
-                        child: Text('Address',style: TextStyle(
-                            fontSize: 18,
-                            color: CupertinoColors.black
-                        ),),
-                      ),
-                      Text("It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
-                          "The point of using Lorem Ipsum is that it has", overflow:TextOverflow.ellipsis ,
-                        maxLines: 2,style: TextStyle(
-                            fontSize: 14,color: Colors.grey
-                        ),),
-
-                      SizedBox(height: 23,),
-
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 8),
-                        child: Text('Working Days', style: TextStyle(
-                            fontSize: 18,
-                            color: CupertinoColors.black
-                        ),),
-                      ),
-                      Text('All Week Days',overflow:TextOverflow.ellipsis ,
-                        maxLines: 2, style: TextStyle(
-                          fontSize: 14,color: Colors.grey
-                      ),),
-                      SizedBox(height: 23,),
-
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 8),
-                        child: Text('Working Hours', style: TextStyle(
-                            fontSize: 18,
-                            color: CupertinoColors.black
-                        ),),
-                      ),
-                      Text('9:00 am - 5:00 pm', overflow:TextOverflow.ellipsis ,
-                        maxLines: 2,style: TextStyle(
-                          fontSize: 14,color: Colors.grey
-                      ),),
-                      SizedBox(height: 23,),
-
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 8),
-                        child: Text('Numbers',
-                            style: TextStyle(
-                                fontSize: 18,
-                                color: CupertinoColors.black
-                            )
-                        ),
-                      ),
-                      Text(""" 01146475874
- 01017757666
- 02054778547                
-                       """, style: TextStyle(
-                          fontSize: 14,color: Colors.grey
-                      ),),
-
-                    ],
-                  ),
-                ),
-              )
+            const  Expanded(child: SingleChildScrollView(child: Home_Custom_TabBar()))
 
 
             ],

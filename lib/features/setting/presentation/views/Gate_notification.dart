@@ -1,8 +1,9 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/Usernotification.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/datamodel.dart';
+
+import 'package:facility/features/setting/presentation/views/widgets/Usernotification.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/shared_widgets/appbar2.dart';
 
 class Empty_Gate_Notification_View extends StatelessWidget {
 

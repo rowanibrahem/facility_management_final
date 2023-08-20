@@ -1,7 +1,9 @@
-import 'package:facility_management/core/shared_widgets/appbar2.dart';
-import 'package:facility_management/features/setting/presentation/views/widgets/Createnewgate.dart';
+
+import 'package:facility/features/setting/presentation/views/widgets/Createnewgate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/shared_widgets/appbar2.dart';
 
 class New_Gate extends StatelessWidget {
   const New_Gate({Key? key}) : super(key: key);
